@@ -1,0 +1,32 @@
+1. Long method
+2. Large class
+3. Comments
+4. Switch statemens
+5. Shotgun surgery
+6. Dostęp publiczny do pól klasy
+7. Stałe niebędaće finalnymi
+8. Różne konwencje nazewnictwa zmiennych
+9. Form Template Method
+10. Słabo testowalny kod (jedynie ręcznie)
+11. Wymieszany kod logiki z kodem prezentacji
+
+
+KLASY:
+1. Umowa + konkretna umowa (interfejs lub klasa abstrakcyjna) (obliczeniowa)
+2. Klasa abstrakcyjna z klasą wyświetlającą na ekranie
+3. Klasa wejścia od użytkownika z konsoli -> tworzenie umowy, odebranie wynikow i przekazać do wyświetlenia na ekranie
+
+
+WYNIK:
+1. Implementacja
+2. Test
+
+Kod przekształcać, a nie pisać od nowa
+
+
+1. Projekt modelu docelowego
+2. Lista przekształceń (do stanu obecnego do docelowego)
+3. Implementacja
+
+
+Termin: 21 maja 2017

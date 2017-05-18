@@ -4,9 +4,15 @@ import java.text.DecimalFormat;
 import java.util.HashMap;
 import java.util.Map;
 
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.Setter;
+
 /**
  * Created by Tomasz on 18.05.2017.
  */
+@Getter
+@Setter
 public abstract class Contract {
     private double podstawa = 0;
     private String umowa = "";
@@ -39,150 +45,6 @@ public abstract class Contract {
 
     public Contract(double podstawa) {
         this.setPodstawa(podstawa);
-    }
-
-    public void setPodstawa(double podstawa) {
-        this.podstawa = podstawa;
-    }
-
-    public void setUmowa(String umowa) {
-        this.umowa = umowa;
-    }
-
-    public double getPodstawa() {
-        return podstawa;
-    }
-
-    public double getSkladkaEmerytalna() {
-        return skladkaEmerytalna;
-    }
-
-    public double getSkladkaRentowa() {
-        return skladkaRentowa;
-    }
-
-    public double getUbezpieczenieChorobowe() {
-        return ubezpieczenieChorobowe;
-    }
-
-    public double getKosztyUzyskania() {
-        return kosztyUzyskania;
-    }
-
-    public double getSkladkaZdrowotnaOdWymiaru9() {
-        return skladkaZdrowotnaOdWymiaru9;
-    }
-
-    public double getSkladkaZdrowotnaOdWymiaru775() {
-        return skladkaZdrowotnaOdWymiaru775;
-    }
-
-    public double getZaliczkaNaPodatekDochodowy() {
-        return zaliczkaNaPodatekDochodowy;
-    }
-
-    public double getKwotaZmniejszajacaPodatek() {
-        return kwotaZmniejszajacaPodatek;
-    }
-
-    public double getZaliczkaUS() {
-        return zaliczkaUS;
-    }
-
-    public double getZaliczkaUSZaokraglenie() {
-        return zaliczkaUSZaokraglenie;
-    }
-
-    public double getWynagrodzenie() {
-        return wynagrodzenie;
-    }
-
-    public double getPodatekPotracony() {
-        return podatekPotracony;
-    }
-
-    public double getObliczonaPodstawa() {
-        return obliczonaPodstawa;
-    }
-
-    public String getUmowa() {
-        return umowa;
-    }
-
-    public double getPodstawaOpodatkowania() {
-        return podstawaOpodatkowania;
-    }
-
-    public double getPodstawaOpodatkowaniaZaokraglona() {
-        return podstawaOpodatkowaniaZaokraglona;
-    }
-
-    public void setSkladkaEmerytalna(double skladkaEmerytalna) {
-        this.skladkaEmerytalna = skladkaEmerytalna;
-    }
-
-    public void setSkladkaRentowa(double skladkaRentowa) {
-        this.skladkaRentowa = skladkaRentowa;
-    }
-
-    public void setUbezpieczenieChorobowe(double ubezpieczenieChorobowe) {
-        this.ubezpieczenieChorobowe = ubezpieczenieChorobowe;
-    }
-
-    public void setKosztyUzyskania(double kosztyUzyskania) {
-        this.kosztyUzyskania = kosztyUzyskania;
-    }
-
-    public void setSkladkaZdrowotnaOdWymiaru9(double skladkaZdrowotnaOdWymiaru9) {
-        this.skladkaZdrowotnaOdWymiaru9 = skladkaZdrowotnaOdWymiaru9;
-    }
-
-    public void setSkladkaZdrowotnaOdWymiaru775(double skladkaZdrowotnaOdWymiaru775) {
-        this.skladkaZdrowotnaOdWymiaru775 = skladkaZdrowotnaOdWymiaru775;
-    }
-
-    public void setZaliczkaNaPodatekDochodowy(double zaliczkaNaPodatekDochodowy) {
-        this.zaliczkaNaPodatekDochodowy = zaliczkaNaPodatekDochodowy;
-    }
-
-    public void setKwotaZmniejszajacaPodatek(double kwotaZmniejszajacaPodatek) {
-        this.kwotaZmniejszajacaPodatek = kwotaZmniejszajacaPodatek;
-    }
-
-    public void setZaliczkaUS(double zaliczkaUS) {
-        this.zaliczkaUS = zaliczkaUS;
-    }
-
-    public void setZaliczkaUSZaokraglenie(double zaliczkaUSZaokraglenie) {
-        this.zaliczkaUSZaokraglenie = zaliczkaUSZaokraglenie;
-    }
-
-    public void setWynagrodzenie(double wynagrodzenie) {
-        this.wynagrodzenie = wynagrodzenie;
-    }
-
-    public void setPodatekPotracony(double podatekPotracony) {
-        this.podatekPotracony = podatekPotracony;
-    }
-
-    public void setObliczonaPodstawa(double obliczonaPodstawa) {
-        this.obliczonaPodstawa = obliczonaPodstawa;
-    }
-
-    public void setPodstawaOpodatkowania(double podstawaOpodatkowania) {
-        this.podstawaOpodatkowania = podstawaOpodatkowania;
-    }
-
-    public void setPodstawaOpodatkowaniaZaokraglona(double podstawaOpodatkowaniaZaokraglona) {
-        this.podstawaOpodatkowaniaZaokraglona = podstawaOpodatkowaniaZaokraglona;
-    }
-
-    public double getProcentKosztowUzyskaniaPrzychodu() {
-        return procentKosztowUzyskaniaPrzychodu;
-    }
-
-    public void setProcentKosztowUzyskaniaPrzychodu(double procentKosztowUzyskaniaPrzychodu) {
-        this.procentKosztowUzyskaniaPrzychodu = procentKosztowUzyskaniaPrzychodu;
     }
 
     public double obliczZaliczkeUS(double zaliczkaNaPodatekDochodowy, double skladkaZdrowotnaOdWymiaru775, double kwotaZmniejszajacaPodatek) {
